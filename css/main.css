@@ -1,0 +1,31 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#map {
+    height: 100%;
+    width: 80%;
+    display: inline-block;
+}
+#config {
+    height: 100%;
+    width: 19%;
+    display: inline-block;
+    vertical-align: top;
+}
+#content {
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: auto;
+}
+
+.optionBox {
+	padding-bottom: 10px;
+}
