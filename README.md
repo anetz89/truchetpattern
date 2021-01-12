@@ -18,6 +18,10 @@ This implementation heavily relies on [Leaflet](https://leafletjs.com/), an open
 
 ## Future plans
 
-Add an opt-out/in for certain tiles in the settings to adjust the result.
+- Improve performance, as all tiles (of deeper layers) are drawn, although only the visible ones are necessary.
 
-Also the performance is quite slow as all tiles (of the deeper layers) are drawn, although only the visible ones are necessary.
+- Improve performance whenever multiple tiles are selected/removed in the settings (wait before rendering the result instead of instantly rendering and freezing the UI)
+
+- Allow custom transparency patterns next to drawing randomly. This may also solve the issue of "mismatching" tiles, as the tile needs to have a different pattern whenever a smaller tile is next to it ('dot-issue')
+
+- Provide more high resolution images to avoid blurry results when using higher zoomlevels.
