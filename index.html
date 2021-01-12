@@ -15,10 +15,9 @@
             <div class="optionBox">
                 <label for="zoom">Zoom</label>
                 <select id="zoom" >
-                  <!-- <option value="0.25">1/4</option> --> <!-- performance issues for winged -->
-                  <option value="0.5">1/2</option>
-                  <option value="1" selected>1</option>
-                  <option value="2">2</option>
+                  <!-- <option value="0">1/2</option> --> <!-- breaks performance of multilayers -->
+                  <option value="1">1</option>
+                  <option value="2" selected>2</option>
                   <option value="3">3</option>
                   <option value="4">4</option>
                   <option value="5">5</option>
@@ -29,16 +28,44 @@
                 <label for="tileset">Tile set</label>
                 <select id="tileset" >
                   <option value="winged" selected>winged</option>
+                  <!-- <option value="winged_multi">winged multi</option> -->
                   <option value="curves">curves</option>
-                  <option value="curves_filled">curves filled</option>
+                  <option value="curves_filled" selected>curves filled</option>
                   <option value="triangles">triangles</option>
                   <option value="diagonales">diagonales</option>
                 </select>
             </div>
+
+            <div class="optionBox">
+                <label for="depth">Depth</label>
+                <select id="depth" >
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3" selected>3</option>
+                  <option value="4">4</option>
+                </select>
+            </div>
+
+            <div class="optionBox">
+                <label for="porosity">Porosity</label>
+                <select id="porosity" >
+                  <option value="0.1">10%</option>
+                  <option value="0.2">20%</option>
+                  <option value="0.3">30%</option>
+                  <option value="0.4" selected>40%</option>
+                  <option value="0.5">50%</option>
+                  <option value="0.6">60%</option>
+                  <option value="0.7">70%</option>
+                  <option value="0.8">80%</option>
+                  <option value="0.9">90%</option>
+                </select>
+            </div>
+
         </div>
     </div>
 
     <script src="./3rdParty/leaflet.js"></script>
+    <script src="./src/truchet.layer.js"></script>
     <script src="./src/config.js"></script>
     <script src="./src/main.js"></script>
 </body>

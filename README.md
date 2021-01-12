@@ -18,6 +18,6 @@ This implementation heavily relies on [Leaflet](https://leafletjs.com/), an open
 
 ## Future plans
 
-As Christopher Carlson's work relies on multi-scale, this project will also try to implement it, but the success is not guaranteed. Feel free to contribute :)
+Add an opt-out/in for certain tiles in the settings to adjust the result.
 
-Another plan is to opt-out/in certain tiles in the settings to adjust the result.
+Also the performance is quite slow as all tiles (of the deeper layers) are drawn, although only the visible ones are necessary.
