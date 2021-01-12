@@ -29,3 +29,16 @@ html, body {
 .optionBox {
 	padding-bottom: 10px;
 }
+
+.imageSelection {
+    height: 70%;
+    overflow: auto;
+}
+
+.tileSelectionImage {
+    padding: 5px;
+}
+
+.tileSelectionImage.disabled {
+    opacity: 0.3;
+}

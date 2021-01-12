@@ -13,6 +13,17 @@
             <h2>Settings</h2>
 
             <div class="optionBox">
+                <label for="tileset">Tile set</label>
+                <select id="tileset" >
+                  <option value="winged" selected>winged</option>
+                  <option value="curves">curves</option>
+                  <option value="curves_filled">curves filled</option>
+                  <option value="triangles">triangles</option>
+                  <option value="diagonales">diagonales</option>
+                </select>
+            </div>
+
+            <div class="optionBox">
                 <label for="zoom">Zoom</label>
                 <select id="zoom" >
                   <!-- <option value="0">1/2</option> --> <!-- breaks performance of multilayers -->
@@ -21,17 +32,6 @@
                   <option value="3" selected>3</option>
                   <option value="4">4</option>
                   <option value="5">5</option>
-                </select>
-            </div>
-
-            <div class="optionBox">
-                <label for="tileset">Tile set</label>
-                <select id="tileset" >
-                  <option value="winged" selected>winged</option>
-                  <option value="curves">curves</option>
-                  <option value="curves_filled">curves filled</option>
-                  <option value="triangles">triangles</option>
-                  <option value="diagonales">diagonales</option>
                 </select>
             </div>
 
@@ -60,6 +60,12 @@
                 </select>
             </div>
 
+            <div class="optionBox imageSelection">
+              Tile Selection
+              <div id="imageSelectionBox">
+                Loading...
+              </div>
+            </div>
         </div>
     </div>
 
