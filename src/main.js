@@ -1,6 +1,6 @@
 var current;
-var zoom = 2;
-var tileset = 'CURVES_FILLED';
+var zoom = 3;
+var tileset = 'WINGED';
 var depth = 3;
 var porosity = 0.4;
 var layers = [];
